@@ -1,4 +1,4 @@
-// jsonsql.js
+// json-sql.js
 
 module.exports = function (RED){
     function JSONSQL(config) {
@@ -55,5 +55,5 @@ module.exports = function (RED){
             node.send(msg);
         });
     }
-    RED.nodes.registerType("jsonsql", JSONSQL);
+    RED.nodes.registerType("json-sql", JSONSQL);
 }
