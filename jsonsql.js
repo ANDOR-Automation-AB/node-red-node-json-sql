@@ -1,7 +1,7 @@
-// autotable.js
+// jsonsql.js
 
 module.exports = function (RED){
-    function AutoTableNode(config) {
+    function JSONSQL(config) {
         RED.nodes.createNode(this, config);
         const node = this;
         const tableName = config.tableName;
@@ -55,5 +55,5 @@ module.exports = function (RED){
             node.send(msg);
         });
     }
-    RED.nodes.registerType("autotable", AutoTableNode);
+    RED.nodes.registerType("jsonsql", JSONSQL);
 }

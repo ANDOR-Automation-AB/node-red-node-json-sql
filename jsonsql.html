@@ -1,7 +1,7 @@
-<!-- autotable.html -->
+<!-- jsonsql.html -->
 
 <script type="text/javascript">
-    RED.nodes.registerType('autotable', {
+    RED.nodes.registerType('jsonsql', {
         category: 'ANDOR',
         color: '#a6bbcf',
         defaults: {
@@ -12,11 +12,11 @@
         outputs: 1,
         icon: "db.svg",
         label: function () {
-            return this.name || "autotable";
+            return this.name || "json to sql";
         }
     });
 </script>
-<script type="text/html" data-template-name="autotable">
+<script type="text/html" data-template-name="jsonsql">
     <div class="form-row">
         <label for="node-input-tableName"><i class="fa fa-table"></i> Table name</label>
         <input type="text" id="node-input-tableName" placeholder="my_table">
