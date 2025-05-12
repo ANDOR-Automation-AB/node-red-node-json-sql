@@ -1,0 +1,11 @@
+{
+    "name": "node-red-node-autotable",
+    "version": "1.0",
+    "description": "Create SQL-table from JSON-data",
+    "keywords": ["node-red"],
+    "node-red": {
+        "nodes":{
+            "autotable": "autotable.js"
+        }
+    }
+}

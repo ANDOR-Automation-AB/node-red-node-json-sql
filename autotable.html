@@ -1,0 +1,24 @@
+<!-- autotable.html -->
+
+<script type="text/javascript">
+    RED.nodes.registerType('autotable', {
+        category: 'ANDOR',
+        color: '#a6bbcf',
+        defaults: {
+            name: { value: "" },
+            tableName: { value: "", required: false }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "db.svg",
+        label: function () {
+            return this.name || "autotable";
+        }
+    });
+</script>
+<script type="text/html" data-template-name="autotable">
+    <div class="form-row">
+        <label for="node-input-tableName"><i class="fa fa-table"></i> Table name</label>
+        <input type="text" id="node-input-tableName" placeholder="my_table">
+    </div>
+</script>
